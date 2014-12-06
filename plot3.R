@@ -1,4 +1,6 @@
-png(file="./figure/plot3.png");
+png(file="./project-1/figure/plot3.png");
+
+# plot of time versus all the sub metering stuff..
 plot(range(power_consumption_subset$timestamp),range(power_consumption_subset$Sub_metering_1, power_consumption_subset$Sub_metering_2,power_consumption_subset$Sub_metering_3),type='n',ylab = "Energy sub metering", xlab = "")
 lines(power_consumption_subset$timestamp,power_consumption_subset$Sub_metering_1, type="l")
 lines(power_consumption_subset$timestamp,power_consumption_subset$Sub_metering_2, type="l", col="red")

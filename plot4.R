@@ -1,4 +1,6 @@
-png(file="./figure/plot4.png");
+png(file="./project-1/figure/plot4.png");
+
+# set the mfrow parameter for 2x2 plots to include all of the plot thus far..
 par(mfrow=c(2,2))
 
 plot(power_consumption_subset$timestamp,power_consumption_subset$Global_active_power, type="l", ylab = "Global Active Power", xlab = "" )
